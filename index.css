@@ -27,6 +27,12 @@ body {
   padding-right: 70px;
   height: 50px;
 }
+nav {
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+}
 
 a {
   text-decoration: none;
@@ -51,15 +57,16 @@ a li:hover {
   background-color: #dfebf6;
   display: flex;
   justify-content: space-around;
-  height: 100vh;
+  height: 100%;
   padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .left-div {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-bottom: 275px;
+  margin-bottom: 175px;
   color: #29353c;
   gap: 16px;
 }
@@ -83,4 +90,35 @@ a li:hover {
 .right-div img {
   width: 500px;
   border-radius: 50%;
+}
+
+.services-section {
+  background-color: #44567d;
+  color: #dfebf6;
+  text-align: center;
+  padding: 50px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+.card {
+  background-color: #dfebf6;
+  color: #29353c;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.card h2 {
+  margin-bottom: 10px;
+  color: orangered;
+}
+#services {
+  height: 100vh;
+  padding-top: 100px;
 }
