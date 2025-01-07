@@ -216,12 +216,16 @@ i {
 
 @media (max-width: 480px) {
   .nav-list li {
-    display: block;
     margin: 10px 0;
   }
   .navdiv {
     flex-direction: column;
     padding: 10px;
+  }
+  .user-credentials {
+    display: flex;
+    justify-content: end;
+    align-items: end;
   }
   .hero-section {
     padding: 30px 10px;
